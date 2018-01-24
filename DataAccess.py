@@ -7,7 +7,7 @@ class DataAccess():
     conn_string = ""
     
     @classmethod
-    def getConnectionString
+    def getConnectionString(self):
         if conn_string=="":
             value=os.environ.get('DATABASE_URL', None)
             if value is not None:
