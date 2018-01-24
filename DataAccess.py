@@ -11,7 +11,7 @@ class DataAccess():
         if self.conn_string=="":
             value=os.environ.get('DATABASE_URL', None)
             if value is not None:
-                result = urlparse.urlparse(value)
+                result = urlparse(value)
                 username = result.username
                 password = result.password
                 database = result.path[1:]
