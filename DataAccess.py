@@ -1,5 +1,5 @@
 import psycopg2
-import urlparse
+from urllib.parse import urlparse
 import os
 
 class DataAccess():
