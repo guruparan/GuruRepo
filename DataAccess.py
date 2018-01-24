@@ -17,7 +17,7 @@ class DataAccess():
                 database = result.path[1:]
                 hostname = result.hostname
                 self.conn_string= "host='"+hostname+"' dbname='"+database+"' user='"+username+"' password='"+password+"'"
-                result self.conn_string
+                return self.conn_string
         else:
             return self.conn_string
 
